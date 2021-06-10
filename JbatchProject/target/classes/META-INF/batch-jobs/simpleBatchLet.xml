@@ -1,0 +1,21 @@
+<!-- <job id="simpleBatchLet"  xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    version="1.0">
+    <step id="firstChunkStep" >
+        <chunk item-count="3">
+         <reader ref="readers.OpenInterestReader"/>
+            <processor ref="processors.OpenInterestProcessor"/>
+            <writer ref="writers.OpenInterestWriter"/>
+        </chunk>    
+    </step>
+</job> -->
+
+<job id="simpleBatchLet"  xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    version="1.0">
+    <step id="firstStep" >
+   <properties>
+            <property name="source" value="C:\\Users\\Dell\\Downloads\\ResponseToFile-Postman-master\\Responses" />
+            <property name="destination" value="C:\\Users\\Dell\\Downloads\\ResponseToFile-Postman-master\\Responses\\OUTPUT\\" />
+        </properties>
+        <batchlet ref="batchlets.SimpleBatchLet"/>
+    </step>
+</job>

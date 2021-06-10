@@ -1,0 +1,3 @@
+06-10 01:45:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTITION_EXECUTION" not found; SQL statement:
+SELECT COUNT(*) FROM PARTITION_EXECUTION [42102-178]
